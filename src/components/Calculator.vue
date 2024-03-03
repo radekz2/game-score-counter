@@ -26,8 +26,6 @@ function reset() {
       <button @click="add(1)">+ 1</button>
       <button @click="substract(5)">- 5</button>
       <button @click="add(5)">+ 5</button>
-      <button @click="substract(10)">- 10</button>
-      <button @click="add(10)">+ 10</button>
       <button @click="reset()">Reset</button>
     </div>
   </div>

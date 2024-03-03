@@ -1,6 +1,8 @@
-# game-score-counter
+# Game Score Counter
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a super simple app for keeping track of a score in a card or board game.
+
+Published version can be found here: https://gamescorecounter.netlify.app/
 
 ## Recommended IDE Setup
 
