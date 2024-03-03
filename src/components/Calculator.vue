@@ -16,20 +16,48 @@ function reset() {
 </script>
 
 <template>
-  <div>
-    <h1>{{ label }} - Score: {{ score }}</h1>
+  <div class="calculator">
+    <div class="main-label">{{ label }} - Score: {{ score }}</div>
     <div>
-      <input name="playerName" placeholder="Player Name" value=""/> 
+      <input class="player-name" name="playerName" placeholder="Player Name" value=""/> 
     </div>
-    <div role="group">
+    <div class="action-buttons">
       <button @click="substract(1)">-1</button>
       <button @click="add(1)">+ 1</button>
       <button @click="substract(5)">- 5</button>
       <button @click="add(5)">+ 5</button>
-      <button @click="reset()">Reset</button>
+      <button @click="reset()" class="error">Reset</button>
     </div>
   </div>
 </template>
 
 <style scoped>
+.action-buttons{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+button {
+  margin: 0.1rem;
+}
+.calculator {
+  border: 0px solid #00000017;
+  border-radius: 10px;
+  padding: 0.3rem;
+  margin: 0.5rem;
+  display: inline-block;
+  width: 95%;
+}
+.main-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding: 0rem 0.5rem; 
+}
+.player-name {
+  border: 1px solid #00000017;
+  border-radius: 5px;
+  margin-top: 0.3rem;
+  margin-bottom: 0.6rem;
+}
 </style>
