@@ -10,6 +10,9 @@ function add(val) {
 function substract(val) {
   score.value -= val
 }
+function reset() {
+  score.value = 0
+}
 </script>
 
 <template>
@@ -25,6 +28,7 @@ function substract(val) {
       <button @click="add(5)">+ 5</button>
       <button @click="substract(10)">- 10</button>
       <button @click="add(10)">+ 10</button>
+      <button @click="reset()">Reset</button>
     </div>
   </div>
 </template>

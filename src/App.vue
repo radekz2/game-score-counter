@@ -9,6 +9,18 @@ import Calculator from './components/Calculator.vue';
   <div>
     <Calculator label="Player 2"/>
   </div>
+  <div>
+    <Calculator label="Player 3"/>
+  </div>
+  <div>
+    <Calculator label="Player 4"/>
+  </div>
+  <div>
+    <Calculator label="Player 5"/>
+  </div>
+  <div>
+    <Calculator label="Player 6"/>
+  </div>
 </template>
 
 <style scoped>
