@@ -1,21 +1,30 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref } from 'vue'
+const props = defineProps(['label'])
 
-const count = ref(0)
+const score = ref(0)
+
+function add(val) {
+  score.value += val
+}
+function substract(val) {
+  score.value -= val
+}
 </script>
 
 <template>
   <div>
-    <h1>Player</h1>
+    <h1>{{ label }} - Score: {{ score }}</h1>
     <div>
       <input name="playerName" placeholder="Player Name" value=""/> 
     </div>
-    <div>
-      Score <span id="score">{{ count }}</span>
-    </div>
-    <div>
-      <button @click="count--">-</button>
-      <button @click="count++">+</button>
+    <div role="group">
+      <button @click="substract(1)">-1</button>
+      <button @click="add(1)">+ 1</button>
+      <button @click="substract(5)">- 5</button>
+      <button @click="add(5)">+ 5</button>
+      <button @click="substract(10)">- 10</button>
+      <button @click="add(10)">+ 10</button>
     </div>
   </div>
 </template>

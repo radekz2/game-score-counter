@@ -4,7 +4,10 @@ import Calculator from './components/Calculator.vue';
 
 <template>
   <div>
-    <Calculator/>
+    <Calculator label="Player 1"/>
+  </div>
+  <div>
+    <Calculator label="Player 2"/>
   </div>
 </template>
 
